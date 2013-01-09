@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9732A43A169DDB1100EC97B1 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9732A439169DDB1100EC97B1 /* libiconv.dylib */; };
+		9732A43C169DDB1B00EC97B1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9732A43B169DDB1A00EC97B1 /* CFNetwork.framework */; };
+		9732A444169DDB9D00EC97B1 /* mail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9732A443169DDB9D00EC97B1 /* mail.m */; };
+		9732A44B169DFD6400EC97B1 /* FolderSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9732A44A169DFD6400EC97B1 /* FolderSelectController.m */; };
+		9732A44E169DFE6300EC97B1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9732A44D169DFE6300EC97B1 /* Storyboard.storyboard */; };
+		9732A451169DFF2300EC97B1 /* GrobalResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9732A450169DFF2300EC97B1 /* GrobalResource.m */; };
+		9732A486169E196800EC97B1 /* MailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9732A485169E196800EC97B1 /* MailViewController.m */; };
 		97765454169DD57C00D6C8C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97765453169DD57C00D6C8C5 /* UIKit.framework */; };
 		97765456169DD57C00D6C8C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97765455169DD57C00D6C8C5 /* Foundation.framework */; };
 		97765458169DD57C00D6C8C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97765457169DD57C00D6C8C5 /* CoreGraphics.framework */; };
@@ -21,9 +28,20 @@
 		97765474169DD57D00D6C8C5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97765459169DD57C00D6C8C5 /* CoreData.framework */; };
 		9776547C169DD57D00D6C8C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9776547A169DD57D00D6C8C5 /* InfoPlist.strings */; };
 		9776547F169DD57D00D6C8C5 /* GmailSlideShowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9776547E169DD57D00D6C8C5 /* GmailSlideShowTests.m */; };
+		977654AC169DDAB300D6C8C5 /* libmailcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 977654A5169DD7A200D6C8C5 /* libmailcore.a */; };
+		977654AE169DDAC700D6C8C5 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 977654AD169DDAC700D6C8C5 /* libssl.a */; };
+		977654B0169DDADF00D6C8C5 /* libsasl2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 977654AF169DDADF00D6C8C5 /* libsasl2.a */; };
+		977654B2169DDAF100D6C8C5 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 977654B1169DDAF100D6C8C5 /* libcrypto.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9732A43F169DDB3200EC97B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9776548B169DD7A100D6C8C5 /* MailCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8618B5610DADB5C00C41188;
+			remoteInfo = "MailCore iOS";
+		};
 		97765475169DD57D00D6C8C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 97765446169DD57C00D6C8C5 /* Project object */;
@@ -31,27 +49,63 @@
 			remoteGlobalIDString = 9776544E169DD57C00D6C8C5;
 			remoteInfo = GmailSlideShow;
 		};
+		977654A2169DD7A200D6C8C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9776548B169DD7A100D6C8C5 /* MailCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = MailCore;
+		};
+		977654A4169DD7A200D6C8C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9776548B169DD7A100D6C8C5 /* MailCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8618B5710DADB5C00C41188;
+			remoteInfo = "MailCore iOS";
+		};
+		977654A6169DD7A200D6C8C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9776548B169DD7A100D6C8C5 /* MailCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8DFCF4915801A5000C01975;
+			remoteInfo = Tests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9732A439169DDB1100EC97B1 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		9732A43B169DDB1A00EC97B1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9732A442169DDB9D00EC97B1 /* mail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mail.h; sourceTree = "<group>"; };
+		9732A443169DDB9D00EC97B1 /* mail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mail.m; sourceTree = "<group>"; };
+		9732A449169DFD6400EC97B1 /* FolderSelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderSelectController.h; sourceTree = "<group>"; };
+		9732A44A169DFD6400EC97B1 /* FolderSelectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderSelectController.m; sourceTree = "<group>"; };
+		9732A44D169DFE6300EC97B1 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		9732A44F169DFF2300EC97B1 /* GrobalResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrobalResource.h; sourceTree = "<group>"; };
+		9732A450169DFF2300EC97B1 /* GrobalResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrobalResource.m; sourceTree = "<group>"; };
+		9732A484169E196800EC97B1 /* MailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailViewController.h; sourceTree = "<group>"; };
+		9732A485169E196800EC97B1 /* MailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailViewController.m; sourceTree = "<group>"; };
 		9776544F169DD57C00D6C8C5 /* GmailSlideShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GmailSlideShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97765453169DD57C00D6C8C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		97765455169DD57C00D6C8C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		97765457169DD57C00D6C8C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		97765459169DD57C00D6C8C5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		9776545D169DD57C00D6C8C5 /* GmailSlideShow-Info.plist */ = {isa = PBXFileReference; path = "GmailSlideShow-Info.plist"; sourceTree = "<group>"; };
+		9776545D169DD57C00D6C8C5 /* GmailSlideShow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GmailSlideShow-Info.plist"; sourceTree = "<group>"; };
 		9776545F169DD57C00D6C8C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		97765461169DD57C00D6C8C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		97765463169DD57C00D6C8C5 /* GmailSlideShow-Prefix.pch */ = {isa = PBXFileReference; path = "GmailSlideShow-Prefix.pch"; sourceTree = "<group>"; };
-		97765464169DD57C00D6C8C5 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		97765463169DD57C00D6C8C5 /* GmailSlideShow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GmailSlideShow-Prefix.pch"; sourceTree = "<group>"; };
+		97765464169DD57C00D6C8C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		97765465169DD57C00D6C8C5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		97765468169DD57C00D6C8C5 /* GmailSlideShow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GmailSlideShow.xcdatamodel; sourceTree = "<group>"; };
 		9776546F169DD57C00D6C8C5 /* GmailSlideShowTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GmailSlideShowTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97765470169DD57D00D6C8C5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		97765479169DD57D00D6C8C5 /* GmailSlideShowTests-Info.plist */ = {isa = PBXFileReference; path = "GmailSlideShowTests-Info.plist"; sourceTree = "<group>"; };
+		97765479169DD57D00D6C8C5 /* GmailSlideShowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GmailSlideShowTests-Info.plist"; sourceTree = "<group>"; };
 		9776547B169DD57D00D6C8C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9776547D169DD57D00D6C8C5 /* GmailSlideShowTests.h */ = {isa = PBXFileReference; path = GmailSlideShowTests.h; sourceTree = "<group>"; };
+		9776547D169DD57D00D6C8C5 /* GmailSlideShowTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GmailSlideShowTests.h; sourceTree = "<group>"; };
 		9776547E169DD57D00D6C8C5 /* GmailSlideShowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GmailSlideShowTests.m; sourceTree = "<group>"; };
+		9776548B169DD7A100D6C8C5 /* MailCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MailCore.xcodeproj; path = Libraries/MailCore/MailCore.xcodeproj; sourceTree = "<group>"; };
+		977654AD169DDAC700D6C8C5 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "Libraries/MailCore/iOSPorts/ports/security/openssl/build/Release-iphoneos/libssl.a"; sourceTree = "<group>"; };
+		977654AF169DDADF00D6C8C5 /* libsasl2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsasl2.a; path = "Libraries/MailCore/iOSPorts/ports/security/cyrus-sasl/build/Release-iphoneos/libsasl2.a"; sourceTree = "<group>"; };
+		977654B1169DDAF100D6C8C5 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "Libraries/MailCore/iOSPorts/ports/security/openssl/build/Release-iphoneos/libcrypto.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +113,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9732A43C169DDB1B00EC97B1 /* CFNetwork.framework in Frameworks */,
+				9732A43A169DDB1100EC97B1 /* libiconv.dylib in Frameworks */,
+				977654B2169DDAF100D6C8C5 /* libcrypto.a in Frameworks */,
+				977654B0169DDADF00D6C8C5 /* libsasl2.a in Frameworks */,
+				977654AE169DDAC700D6C8C5 /* libssl.a in Frameworks */,
+				977654AC169DDAB300D6C8C5 /* libmailcore.a in Frameworks */,
 				97765454169DD57C00D6C8C5 /* UIKit.framework in Frameworks */,
 				97765456169DD57C00D6C8C5 /* Foundation.framework in Frameworks */,
 				97765458169DD57C00D6C8C5 /* CoreGraphics.framework in Frameworks */,
@@ -80,9 +140,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9732A441169DDB7A00EC97B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9732A442169DDB9D00EC97B1 /* mail.h */,
+				9732A443169DDB9D00EC97B1 /* mail.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9732A44C169DFD6B00EC97B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9732A449169DFD6400EC97B1 /* FolderSelectController.h */,
+				9732A44A169DFD6400EC97B1 /* FolderSelectController.m */,
+				9732A484169E196800EC97B1 /* MailViewController.h */,
+				9732A485169E196800EC97B1 /* MailViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		97765444169DD57C00D6C8C5 = {
 			isa = PBXGroup;
 			children = (
+				9732A43B169DDB1A00EC97B1 /* CFNetwork.framework */,
+				9732A439169DDB1100EC97B1 /* libiconv.dylib */,
+				977654B1169DDAF100D6C8C5 /* libcrypto.a */,
+				977654AF169DDADF00D6C8C5 /* libsasl2.a */,
+				977654AD169DDAC700D6C8C5 /* libssl.a */,
+				9776548B169DD7A100D6C8C5 /* MailCore.xcodeproj */,
 				9776545B169DD57C00D6C8C5 /* GmailSlideShow */,
 				97765477169DD57D00D6C8C5 /* GmailSlideShowTests */,
 				97765452169DD57C00D6C8C5 /* Frameworks */,
@@ -114,10 +200,13 @@
 		9776545B169DD57C00D6C8C5 /* GmailSlideShow */ = {
 			isa = PBXGroup;
 			children = (
+				9732A44C169DFD6B00EC97B1 /* Controller */,
+				9732A441169DDB7A00EC97B1 /* Model */,
 				97765464169DD57C00D6C8C5 /* AppDelegate.h */,
 				97765465169DD57C00D6C8C5 /* AppDelegate.m */,
 				97765467169DD57C00D6C8C5 /* GmailSlideShow.xcdatamodeld */,
 				9776545C169DD57C00D6C8C5 /* Supporting Files */,
+				9732A44D169DFE6300EC97B1 /* Storyboard.storyboard */,
 			);
 			path = GmailSlideShow;
 			sourceTree = "<group>";
@@ -125,6 +214,8 @@
 		9776545C169DD57C00D6C8C5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9732A44F169DFF2300EC97B1 /* GrobalResource.h */,
+				9732A450169DFF2300EC97B1 /* GrobalResource.m */,
 				9776545D169DD57C00D6C8C5 /* GmailSlideShow-Info.plist */,
 				9776545E169DD57C00D6C8C5 /* InfoPlist.strings */,
 				97765461169DD57C00D6C8C5 /* main.m */,
@@ -152,6 +243,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9776548C169DD7A100D6C8C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				977654A3169DD7A200D6C8C5 /* MailCore.framework */,
+				977654A5169DD7A200D6C8C5 /* libmailcore.a */,
+				977654A7169DD7A200D6C8C5 /* Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +267,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9732A440169DDB3200EC97B1 /* PBXTargetDependency */,
 			);
 			name = GmailSlideShow;
 			productName = GmailSlideShow;
@@ -209,6 +311,12 @@
 			mainGroup = 97765444169DD57C00D6C8C5;
 			productRefGroup = 97765450169DD57C00D6C8C5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9776548C169DD7A100D6C8C5 /* Products */;
+					ProjectRef = 9776548B169DD7A100D6C8C5 /* MailCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9776544E169DD57C00D6C8C5 /* GmailSlideShow */,
@@ -217,12 +325,38 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		977654A3169DD7A200D6C8C5 /* MailCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = MailCore.framework;
+			path = MailCore;
+			remoteRef = 977654A2169DD7A200D6C8C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		977654A5169DD7A200D6C8C5 /* libmailcore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmailcore.a;
+			remoteRef = 977654A4169DD7A200D6C8C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		977654A7169DD7A200D6C8C5 /* Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.octest;
+			remoteRef = 977654A6169DD7A200D6C8C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		9776544D169DD57C00D6C8C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				97765460169DD57C00D6C8C5 /* InfoPlist.strings in Resources */,
+				9732A44E169DFE6300EC97B1 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +394,10 @@
 				97765462169DD57C00D6C8C5 /* main.m in Sources */,
 				97765466169DD57C00D6C8C5 /* AppDelegate.m in Sources */,
 				97765469169DD57C00D6C8C5 /* GmailSlideShow.xcdatamodeld in Sources */,
+				9732A444169DDB9D00EC97B1 /* mail.m in Sources */,
+				9732A44B169DFD6400EC97B1 /* FolderSelectController.m in Sources */,
+				9732A451169DFF2300EC97B1 /* GrobalResource.m in Sources */,
+				9732A486169E196800EC97B1 /* MailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +412,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9732A440169DDB3200EC97B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MailCore iOS";
+			targetProxy = 9732A43F169DDB3200EC97B1 /* PBXContainerItemProxy */;
+		};
 		97765476169DD57D00D6C8C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9776544E169DD57C00D6C8C5 /* GmailSlideShow */;
@@ -321,8 +464,9 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				SDKROOT = iphoneos;
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/../../include";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -340,9 +484,10 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/../../include";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -353,7 +498,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GmailSlideShow/GmailSlideShow-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/../../include";
 				INFOPLIST_FILE = "GmailSlideShow/GmailSlideShow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -364,7 +511,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GmailSlideShow/GmailSlideShow-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/../../include";
 				INFOPLIST_FILE = "GmailSlideShow/GmailSlideShow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -423,6 +572,7 @@
 				97765484169DD57D00D6C8C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97765485169DD57D00D6C8C5 /* Build configuration list for PBXNativeTarget "GmailSlideShowTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +581,7 @@
 				97765487169DD57D00D6C8C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
